@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Counter.scss"
+import classes from "./Counter.module.scss";
 
 export const Counter = () => {
 
@@ -10,7 +10,7 @@ export const Counter = () => {
     return (
         <div>
             <h1>{ count }</h1>
-            <button onClick={increment}>inc</button>
+            <button className={classes.btn} onClick={increment}>inc</button>
         </div>
     );
 };
