@@ -1,4 +1,4 @@
-export function fn(arg: number): string {
-    console.log('povarenok');
-    return "RETURNING"
+export function fn (arg: number): string {
+    console.log('povarenok')
+    return 'RETURNING'
 }
