@@ -8,8 +8,6 @@ module.exports = {
         'standard-with-typescript',
         'plugin:i18next/recommended'
     ],
-    overrides: [
-    ],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
@@ -31,7 +29,13 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'off',
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/naming-convention': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true }],
+        'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid'] }],
         'n/handle-callback-err': 'off'
-    }
+    },
+    overrides: [
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'],
+            rules: { 'i18next/no-literal-string': 'off' }
+        }
+    ]
 }
