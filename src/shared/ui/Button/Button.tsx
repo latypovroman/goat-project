@@ -3,7 +3,8 @@ import styles from './Button.module.scss'
 import { type ButtonHTMLAttributes, type FC } from 'react'
 
 export enum VariantButton {
-    CLEAR = 'clear'
+    CLEAR = 'clear',
+    OUTLINE = 'outline',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
