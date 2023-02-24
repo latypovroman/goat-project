@@ -11,7 +11,7 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-        project: ['./tsconfig.json']
+        project: './tsconfig.json'
     },
     plugins: [
         'react',
@@ -29,8 +29,10 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': 'off',
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/naming-convention': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid'] }],
-        'n/handle-callback-err': 'off'
+        'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] }],
+        'n/handle-callback-err': 'off',
+        '@typescript-eslint/consistent-type-assertions': 'off',
+        '@typescript-eslint/prefer-includes': 'off'
     },
     overrides: [
         {

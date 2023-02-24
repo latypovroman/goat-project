@@ -21,7 +21,7 @@ export const LangSwitcher = (props: LangSwitcherProps) => {
             variant={VariantButton.CLEAR}
             onClick={toggle}
         >
-            {t('Языковой вариант')}
+            {t('Язык')}
         </Button>
     )
 }
