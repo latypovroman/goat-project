@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 jobs:
   pipeline:
-    runs-on: ubuntu-latest
+    runs-on: windows-2019
     strategy:
       matrix:
         node-version: [ 18.x ]
@@ -28,10 +28,6 @@ jobs:
         run: npm run slint
       - name: testing unit
         run: npm run test:unit
-      - name: linting css
-        run: npm run slint
-      - name: linting css
-        run: npm run slint
       - name: build storybook
         run: npm run build:storybook
       - name: testing screenshots
