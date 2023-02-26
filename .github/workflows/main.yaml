@@ -32,3 +32,7 @@ jobs:
         run: npm run slint
       - name: linting css
         run: npm run slint
+      - name: build storybook
+        run: npm run build:storybook
+      - name: testing screenshots
+        run: npm run test:ui:ci
