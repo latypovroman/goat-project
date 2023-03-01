@@ -24,3 +24,21 @@
 .langSwitcher {
     color: var(--secondary-inverted-color);
 }
+
+.collapseButton {
+    align-self: end;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    margin: 20px 0 auto 5px;
+    gap: 10px;
+}
+
+.icon {
+    display: block;
+    margin: 0 auto;
+    fill: var(--secondary-inverted-color);
+}
