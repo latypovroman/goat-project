@@ -8,6 +8,8 @@
 # testing
 /coverage
 /.idea
+/.loki/report.json
+/.loki/report.html
 
 # production
 /build
