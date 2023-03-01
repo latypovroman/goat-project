@@ -22,19 +22,19 @@ jobs:
         run: npm install
       - name: build production project
         run: npm run build:prod
-        if (always)
+        if: always()
       - name: linting typescript
         run: npm run lint
-        if (always)
+        if: always()
       - name: linting css
         run: npm run slint
-        if (always)
+        if: always()
       - name: testing unit
-        if (always)
+        if: always()
         run: npm run test:unit
       - name: build storybook
         run: npm run build:storybook
-        if (always)
+        if: always()
       - name: testing screenshots
         run: npm run test:ui:ci
-        if (always)
+        if: always()
