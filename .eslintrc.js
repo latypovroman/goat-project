@@ -15,7 +15,8 @@ module.exports = {
     },
     plugins: [
         'react',
-        'i18next'
+        'i18next',
+        'react-hooks'
     ],
     settings: {
         react: {
@@ -32,7 +33,9 @@ module.exports = {
         'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] }],
         'n/handle-callback-err': 'off',
         '@typescript-eslint/consistent-type-assertions': 'off',
-        '@typescript-eslint/prefer-includes': 'off'
+        '@typescript-eslint/prefer-includes': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'error'
     },
     overrides: [
         {
