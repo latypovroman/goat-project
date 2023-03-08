@@ -117,3 +117,16 @@ OutlineLight.args = {
     variant: ButtonVariant.OUTLINE
 }
 OutlineLight.decorators = [ThemeDecorator(Theme.LIGHT)]
+
+export const OutlineInvertedDark = Template.bind({})
+OutlineInvertedDark.args = {
+    children: 'Text',
+    variant: ButtonVariant.OUTLINE_INVERTED
+}
+
+export const OutlineInvertedLight = Template.bind({})
+OutlineInvertedLight.args = {
+    children: 'Text',
+    variant: ButtonVariant.OUTLINE_INVERTED
+}
+OutlineInvertedLight.decorators = [ThemeDecorator(Theme.LIGHT)]
