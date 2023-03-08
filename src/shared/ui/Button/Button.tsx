@@ -6,6 +6,7 @@ export enum ButtonVariant {
     CLEAR = 'clear',
     CLEAR_INVERTED = 'clear-inverted',
     OUTLINE = 'outline',
+    OUTLINE_INVERTED = 'outline-inverted'
 }
 
 export enum ButtonSize {
